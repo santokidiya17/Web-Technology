@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a = parseInt(prompt("Enter the number between 0-999:"));
+
+        arr1 = ["One","Two","Three","Four","Five","Six","Seven","Eight","Nine"];
+        arr2 = ['Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen','Seventeen','Eighteen'];
+        arr3 = ['Ten','Twenty','Thirty','Fourty','Fifty','Sixty','Seventy','Eighty'];
+
+        if(a>0 && a<=999){
+            if(a/100 != 0){
+                switch(a){
+                    case '1':document.write("one hundred");
+                             break;
+                    case '2':document.write("two hundred");
+                             break;
+                    case '3':document.write("three hundred");
+                             break;
+                    case '4':document.write("four hundred");
+                             break;
+                    case '5':document.write("five hundred");
+                             break;
+                    case '6':document.write("six hundred");
+                             break;
+                    case '7':document.write("seven hundred");
+                             break;
+                    case '8':document.write("eight hundred");
+                             break;
+                    case '9':document.write("nine hundred");
+                             break;
+                }
+                a = a%100;
+            }
+
+            if(a/10 != 0){
+                
+            }
+        }
+        else if(a<0 || a>999){
+            document.write("Out of Range")
+        }
+        else if(a!=' '){
+            document.write("Not a number")
+        }    
+    </script>
+</body>
+</html>
