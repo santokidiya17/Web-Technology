@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallbackFunction</title>
+</head>
+<body>
+    <script>
+        function printResult(ans){
+            console.log(ans);
+        }
+        function square(a, myCallBack){
+            let result = a*a;
+            myCallBack(result);
+        }
+        square(2,printResult);
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let_Var</title>
+</head>
+
+<body>
+    <script>
+        a = 10;//global scope
+        console.log("A Outside : " + a);
+        abc();
+
+        function abc() {
+            var a = 20;//scope till the function
+            console.log("A Inside Function : " + a);
+
+            if (true) {
+                let a = 30;//scope till the if block
+                console.log("A Inside Block : " + a);
+            }
+        }
+        console.log("----------");
+
+        b = 11;
+        console.log("B Outside : " + b);
+        xyz();
+
+        function xyz() {
+            var b = 22;
+            if (true) {
+                b = 33;
+                console.log("B Inside Block : " + b);
+            }
+            console.log("B Inside Function : " + b);
+        }
+        console.log("----------");
+
+        d = 11;
+        console.log("D Outside : " + d);
+        pqr();
+
+
+        function pqr() {
+            d = 22;
+            if (true) {
+                let d = 33;
+                console.log("D Inside Block : " + d);
+            }
+            console.log("D Inside Function : " + d);
+        }
+        console.log("----------");
+
+        const i = {
+            name: 'Diya',
+            age: 18
+        }
+        i.name = 'Santoki';
+        console.log(i);
+
+    </script>
+</body>
+
+</html>

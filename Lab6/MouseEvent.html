@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="event" >Click here</button>
+    <script>
+        document.getElementById('event').addEventListener('click',()=>{
+            console.log("mouse click");
+        });
+        document.getElementById('event').addEventListener('dblclick', ()=>{
+            console.log("mouse double click");
+        });
+        document.getElementById('event').addEventListener('mousedown', ()=>{
+            console.log("mouse down");
+        });
+        document.getElementById('event').addEventListener('mouseup', ()=>{
+            console.log("mouse up");
+        });
+        document.getElementById('event').addEventListener('mouseenter', ()=>{
+            console.log("mouse enter");
+        });
+        document.getElementById('event').addEventListener('mouseleave', ()=>{
+            console.log("mouse leave");
+        });
+        document.getElementById('event').addEventListener('mousemove', ()=>{
+            console.log("mouse move");
+        });
+        document.getElementById('event').addEventListener('mouseover', ()=>{
+            console.log("mouse over");
+        });
+        document.getElementById('event').addEventListener('mouseout', ()=>{
+            console.log("mouse out");
+        });
+    </script>
+</body>
+
+</html>
